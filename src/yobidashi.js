@@ -44,7 +44,5 @@ var yobidashi = (function () {
             }
         }
     };
-
     return _;
-
-}())
+}());
