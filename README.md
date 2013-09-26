@@ -11,13 +11,13 @@ var cb = function(){
 }
 
 //subscribe to some channel
-yobidashi.sub('/channel/sub', cb);
+yobidashi.sub('/channel/subchannel', cb);
 ```
 
 publish:
 ```javascript
 //subscribe to some channel
-yobidashi.pub('/channel/sub');
+yobidashi.pub('/channel/subchannel');
 ```
 
 unsubscribe:
@@ -28,8 +28,8 @@ var cb = function(){
 }
 
 //subscribe to some channel
-yobidashi.sub('/channel/sub', cb);
+yobidashi.sub('/channel/subchannel', cb);
 
-//unscribe with reference to same callback
-yobidashi.unsub('/channel/sub', cb);
+//unsubscribe with reference to same callback
+yobidashi.unsub('/channel/subchannel', cb);
 ```
