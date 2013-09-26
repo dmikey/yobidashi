@@ -3,6 +3,8 @@ yobidashi
 
 A Micro JavaScript Pub Sub Utility for the Browser. IE6-10, and Modern.
 
+yobidashi does not build or manage a que, subs need to be established before pubs.
+
 subscribe to an event:
 ```javascript
 //create a call back
