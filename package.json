@@ -1,0 +1,12 @@
+{
+  "name": "yobidashi",
+  "preferGlobal": false,
+  "version": "0.1.0",
+  "author": "derek m anderson <dmanderson@live.com>",
+  "description": "Super small pubsub.",
+
+  "devDependencies": {
+    "grunt"    :  "*",
+    "grunt-closure-compiler" : "*"
+  }
+}
