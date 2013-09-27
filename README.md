@@ -6,7 +6,7 @@ A Standalone Micro JavaScript Pub Sub Utility for the _Browser_. Helping you dev
 * does not build or manage a messaging/work que
 * subs need to be established to listen before pubs are emitted.
 * has NO dependencies
-* supports IE6-10, and Modern.
+* supports IE6-10, and Modern (Firefox, Safari, Chrome, Opera).
 * uses native eventing
 
 subscribe to an event:
