@@ -3,7 +3,7 @@ yobidashi
 
 A Standalone Micro JavaScript Pub Sub Utility for the _Browser_. Helping you develop modular javascript with independece.
 
-* does not build or manage a que
+* does not build or manage a messaging/work que
 * subs need to be established to listen before pubs are emitted.
 * has NO dependencies
 * supports IE6-10, and Modern.
