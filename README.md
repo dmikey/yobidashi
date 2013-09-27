@@ -51,6 +51,10 @@ var cb = yobidashi.bind(function(){
 });
 ```
 
+Simple Example Page:
+http://jsfiddle.net/toxigenicpoem/Tqevs/
+
+
 The MIT License (MIT)
 
 Copyright (c) 2013 Derek M. Anderson
