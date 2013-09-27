@@ -1,7 +1,7 @@
 yobidashi
 =========
 
-A Standalone Micro JavaScript Pub Sub Utility for the _Browser_. 
+A Standalone Micro JavaScript Pub Sub Utility for the _Browser_. Helping you develop modular javascript with independece.
 
 * does not build or manage a que
 * subs need to be established to listen before pubs are emitted.
