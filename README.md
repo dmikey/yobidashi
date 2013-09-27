@@ -51,6 +51,9 @@ var cb = yobidashi.bind(function(){
 });
 ```
 
+Use banzuke standalone message que to simplfy moving data around!:
+https://github.com/toxigenicpoem/banzuke
+
 Simple Example Page:
 http://jsfiddle.net/toxigenicpoem/Tqevs/
 
