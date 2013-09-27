@@ -4,7 +4,7 @@ yobidashi
 A Micro JavaScript Pub Sub Utility for the Browser. 
 
 * does not build or manage a que
-* subs need to be established before pubs.
+* subs need to be established to listen before pubs are emitted.
 * has NO dependencies
 * supports IE6-10, and Modern.
 
