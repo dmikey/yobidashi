@@ -1,8 +1,4 @@
 var yobidashi = (function () {
-    var ArrayProto = Array.prototype,
-        FuncProto = Function.prototype,
-        slice = ArrayProto.slice,
-        nativeBind = FuncProto.bind;
     var _ = {
         pub: function (eventname, data) {
             //emit event
@@ -16,7 +12,6 @@ var yobidashi = (function () {
                 evt.initCustomEvent(event, params.bubbles, params.cancelable, params.detail);
                 return evt;
             };
-
             if (window.CustomEvent) {
                 var event = new CustomEvent(uniqueName, {
                     'detail': data
@@ -39,6 +34,7 @@ var yobidashi = (function () {
             }
         },
         unsub: function (eventname, callback) {
+            // remove bound event
             if (document.createEvent) {
                 var obj = document.getElementsByTagName('body')[0];
                 obj.removeEventListener('yobidashi.' + eventname, callback);
@@ -46,11 +42,14 @@ var yobidashi = (function () {
                 document.documentElement.detachEvent('onpropertychange', callback);
             }
         },
-        data: function (event) {
-            return event.detail || document.documentElement[event.propertyName];
-        },
         bind: function (func, context) {
-            var args, bound;
+            //bind function ripped from underscore
+            var ArrayProto = Array.prototype,
+                FuncProto = Function.prototype,
+                slice = ArrayProto.slice,
+                nativeBind = FuncProto.bind,
+                args, 
+                bound;
             if (nativeBind && func.bind === nativeBind) return nativeBind.apply(func, slice.call(arguments, 1));
             args = slice.call(arguments, 2);
             return bound = function () {

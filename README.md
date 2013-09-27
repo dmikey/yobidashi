@@ -36,6 +36,16 @@ yobidashi.sub('/channel', cb);
 yobidashi.unsub('/channel', cb);
 ```
 
+use underscore's bind(included with yobidashi) to pass data:
+```javascript
+//create a data object
+var data = {foo: 'bar'};
+
+//create a call back bound to data
+var cb = yobidashi.bind(function(){
+    console.log(this.foo);
+});
+```
 
 The MIT License (MIT)
 
