@@ -22,7 +22,7 @@ yobidashi.sub('/channel', cb);
 
 publish:
 ```javascript
-//subscribe to some channel
+//publish to some channel
 yobidashi.pub('/channel');
 ```
 
