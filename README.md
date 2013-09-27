@@ -1,9 +1,12 @@
 yobidashi
 =========
 
-A Micro JavaScript Pub Sub Utility for the Browser. IE6-10, and Modern.
+A Micro JavaScript Pub Sub Utility for the Browser. 
 
-yobidashi does not build or manage a que, subs need to be established before pubs.
+* does not build or manage a que
+* subs need to be established before pubs.
+* has NO dependencies
+* supports IE6-10, and Modern.
 
 subscribe to an event:
 ```javascript
@@ -36,7 +39,7 @@ yobidashi.sub('/channel', cb);
 yobidashi.unsub('/channel', cb);
 ```
 
-use underscore's bind(included with yobidashi) to pass data:
+use bind(included with yobidashi) to pass data:
 ```javascript
 //create a data object
 var data = {foo: 'bar'};
