@@ -1,5 +1,4 @@
-var yobidashi = (function () {
-    var _ = {
+var yobidashi = {
         pub: function (eventname, data) {
             //emit event
             var uniqueName = 'yobidashi.' + eventname;
@@ -47,9 +46,8 @@ var yobidashi = (function () {
             var ArrayProto = Array.prototype,
                 FuncProto = Function.prototype,
                 slice = ArrayProto.slice,
-                nativeBind = FuncProto.bind,
-                args, 
-                bound;
+                nativeBind = FuncProto.bind;
+            var args, bound;
             if (nativeBind && func.bind === nativeBind) return nativeBind.apply(func, slice.call(arguments, 1));
             args = slice.call(arguments, 2);
             return bound = function () {
@@ -63,5 +61,3 @@ var yobidashi = (function () {
             };
         }
     };
-    return _;
-}());
