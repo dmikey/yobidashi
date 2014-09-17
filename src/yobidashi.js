@@ -1,4 +1,6 @@
-var yobidashi = {
+define(function(){
+
+    var yobidashi = {
         pub: function (eventname, data) {
             //emit event
             //create unique eventname name
@@ -69,3 +71,7 @@ var yobidashi = {
             };
         }
     };
+
+    return yobidashi;
+});
+
